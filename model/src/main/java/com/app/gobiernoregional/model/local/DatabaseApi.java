@@ -11,6 +11,8 @@ import java.sql.Statement;
 /**
  * Created by practicanteoti on 16/06/2015.
  */
+
+//clase que debe modificarse
 public class DatabaseApi {
 
     Statement stm ;

@@ -7,12 +7,4 @@
     tools:context="com.app.gobiernoregional.inventariogrp.views.activities.MainActivity">
 
 
-
-    <fragment
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:name="com.app.gobiernoregional.inventariogrp.views.fragments.DownloadData"
-        tools:layout="@layout/fragment_download_data"
-        ></fragment>
-
 </RelativeLayout>
