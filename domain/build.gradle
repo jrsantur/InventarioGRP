@@ -1,4 +1,6 @@
 apply plugin: 'java'
+sourceCompatibility = 1.6
+targetCompatibility = 1.6
 
 configurations {
     provided
@@ -11,13 +13,12 @@ sourceSets {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
     compile project (':common')
     compile project (':model')
 
-    compile 'com.j256.ormlite:ormlite-android:4.43'
-    compile 'com.j256.ormlite:ormlite-core:4.43'
-
     provided 'com.google.dagger:dagger-compiler:2.0'
 
+    //test dependencies
+    testCompile 'junit:junit:4.11'
+    testCompile 'org.mockito:mockito-core:1.9.5'
 }
