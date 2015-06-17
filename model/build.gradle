@@ -1,0 +1,24 @@
+apply plugin: 'java'
+
+
+configurations {
+    provided
+}
+
+sourceSets {
+    main {
+        compileClasspath += configurations.provided
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(':common')
+
+    compile 'com.j256.ormlite:ormlite-android:4.43'
+    compile 'com.j256.ormlite:ormlite-core:4.43'
+    compile 'com.squareup:otto:1.3.5'
+    provided 'com.google.dagger:dagger-compiler:2.0'
+
+
+}

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">InventarioGRP</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_config_db">ConfigDBActivity</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="messageDowloadDialog">Seguro que quiere descargar los dtos del SIGA a la aplicacion</string>
+    <string name="titleDowloadDialog">Download Data </string>
+    <string name="confirm">Si</string>
+    <string name="cancel">No</string>
+    <string name="title_activity_main">MainActivity</string>
+</resources>
