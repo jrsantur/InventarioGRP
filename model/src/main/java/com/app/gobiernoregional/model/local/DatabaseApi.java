@@ -13,6 +13,7 @@ import java.sql.Statement;
  */
 
 //clase que debe modificarse
+
 public class DatabaseApi {
 
     Statement stm ;
@@ -30,9 +31,9 @@ public class DatabaseApi {
         }
     }
 
-    public void getResponsables(){
+    public Responsable getResponsables(){
 
-        Responsable responsable;
+        Responsable responsable = null;
 
         String SQL_query = "SELECT docm_ident , empleado, apellido_paterno , apellido_materno, nombres  FROM SIG_PERSONAL  ";
         try {
@@ -59,8 +60,10 @@ public class DatabaseApi {
             e.printStackTrace();
         }
 
+        return responsable;
 
     }
+
 
     public void getBienActivo(){
 

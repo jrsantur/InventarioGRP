@@ -30,19 +30,20 @@ public class ConnectionSiga {
             rs = stmt.executeQuery(SQL);
 
             // Iterate through the data in the result set and display it.
-            while (rs.next()) {
+            //while (rs.next()) {
                 //txtView.setText(rs.getString(2));
-                int i= 1;
+               // int i= 1;
                 //Toast.makeText(this,"El resultado de la consulta es:  "+rs.getString(1), Toast.LENGTH_LONG).show();
-                i++;
-            }
+            //i++;
+            //}
 
 
-        }catch(Exception ex)
-        {
-            return null;
+        }
+        catch(Exception ex){
+            ex.printStackTrace();
         }
 
-    return con;
+     return con;
+
     }
 }

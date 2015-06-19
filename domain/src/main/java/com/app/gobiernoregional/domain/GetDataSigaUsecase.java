@@ -10,8 +10,6 @@ public interface GetDataSigaUsecase extends UseCase {
 
     public void requestData();
 
-    public void responseData();
-
     public void sendDataToPresenter ( BienActivoWrapper response);
 
     public void unRegister ();

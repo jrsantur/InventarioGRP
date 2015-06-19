@@ -8,6 +8,9 @@
 <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
+    //login error
+    <string name="username_error">Username Incorrect</string>
+    <string name="password_error">Password Incorrect</string>
 
     <string name="messageDowloadDialog">Seguro que quiere descargar los dtos del SIGA a la aplicacion</string>
     <string name="titleDowloadDialog">Download Data </string>

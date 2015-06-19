@@ -4,8 +4,6 @@ import com.app.gobiernoregional.model.entities.BienActivoWrapper;
 import com.app.gobiernoregional.model.local.DataSources;
 import com.squareup.otto.Bus;
 
-import java.sql.Statement;
-
 import javax.inject.Inject;
 
 
@@ -27,13 +25,10 @@ public class GetDataSigaUsecaseController implements GetDataSigaUsecase {
 
 
 
+
+
     @Override
     public void requestData() {
-
-    }
-
-    @Override
-    public void responseData() {
 
     }
 

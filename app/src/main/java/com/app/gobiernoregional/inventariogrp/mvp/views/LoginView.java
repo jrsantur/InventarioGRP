@@ -11,10 +11,19 @@ public interface LoginView extends View{
 
     void showMessage();
 
+    void setUsernameError();
+
+    void setPasswordError();
+
+    void activateButtonLogin();
+
+    void hideButtonLogin();
+
     void setTextFieldUsername(String username);
 
     void setTextFieldPassword(String password);
 
     boolean isFieldsEmpty();
 
+    void navigateToHome();
 }

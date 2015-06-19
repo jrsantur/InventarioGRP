@@ -11,7 +11,9 @@
     <android.support.design.widget.TextInputLayout
         android:id="@+id/inputName"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo_index"
+        android:layout_marginTop="48dp">
 
         <EditText
             android:id="@+id/username"
@@ -32,10 +34,37 @@
             android:id="@+id/password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="password"
+            android:hint="Password"
             />
     </android.support.design.widget.TextInputLayout>
 
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/logo_index"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/btn_login"
+        android:layout_below="@+id/inputPassword"
+        android:layout_marginTop="16dp"
+        android:layout_alignRight="@+id/inputPassword"
+        android:layout_alignEnd="@+id/inputPassword"
+        android:layout_alignLeft="@+id/inputPassword"
+        android:layout_alignStart="@+id/inputPassword" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"/>
 
 
 </RelativeLayout>

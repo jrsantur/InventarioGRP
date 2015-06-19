@@ -3,20 +3,19 @@ package com.app.gobiernoregional.inventariogrp.provider;
 
 
 import android.content.Context;
-import com.app.gobiernoregional.model.entities.BienActivo;
-import com.app.gobiernoregional.model.entities.UnidadEjecutora;
-import com.app.gobiernoregional.model.entities.UnidadOrganica;
-import com.app.gobiernoregional.model.entities.DireccionRegional;
-import com.app.gobiernoregional.model.entities.Responsable;
-import com.app.gobiernoregional.model.entities.Users;
 import android.database.sqlite.SQLiteDatabase;
 import android.util.Log;
 
+import com.app.gobiernoregional.model.entities.BienActivo;
+import com.app.gobiernoregional.model.entities.DireccionRegional;
+import com.app.gobiernoregional.model.entities.Responsable;
+import com.app.gobiernoregional.model.entities.UnidadEjecutora;
+import com.app.gobiernoregional.model.entities.UnidadOrganica;
+import com.app.gobiernoregional.model.entities.Users;
 import com.j256.ormlite.android.apptools.OrmLiteSqliteOpenHelper;
 import com.j256.ormlite.dao.Dao;
 import com.j256.ormlite.support.ConnectionSource;
 import com.j256.ormlite.table.TableUtils;
-
 
 import java.sql.SQLException;
 
@@ -82,7 +81,6 @@ public class DatabaseHelper extends OrmLiteSqliteOpenHelper {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-
     }
 
     public Dao<BienActivo, Integer> getBienActivoDao() throws SQLException {
@@ -114,10 +112,7 @@ public class DatabaseHelper extends OrmLiteSqliteOpenHelper {
         unidadOrganicasDao = null;
         unidadEjecutorasDao = null;
         responsableDao = null;
-
         super.close();
     }
-
-
 
 }

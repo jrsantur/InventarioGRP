@@ -104,6 +104,7 @@
     <orderEntry type="library" exported="" scope="TEST" name="junit-dep-4.10" level="project" />
     <orderEntry type="library" exported="" name="javax.annotation-10.0-b28" level="project" />
     <orderEntry type="library" exported="" scope="TEST" name="javawriter-2.1.1" level="project" />
+    <orderEntry type="library" exported="" name="butterknife-6.0.0" level="project" />
     <orderEntry type="library" exported="" scope="TEST" name="recyclerview-v7-21.0.3" level="project" />
     <orderEntry type="library" exported="" scope="TEST" name="hamcrest-core-1.1" level="project" />
     <orderEntry type="library" exported="" name="ormlite-core-4.43" level="project" />
