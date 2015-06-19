@@ -8,9 +8,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-/**
- * Created by practicanteoti on 16/06/2015.
- */
+
 
 //clase que debe modificarse
 
@@ -21,7 +19,7 @@ public class DatabaseApi {
     Connection conn ;
 
 
-    void DatabaseApi(){
+    DatabaseApi(){
 
         try {
             conn = new ConnectionSiga().conectar();
@@ -53,7 +51,6 @@ public class DatabaseApi {
                 responsable.setApellidoPaterno(apellido_paterno);
                 responsable.setApellidoMaterno(apellido_materno);
                 responsable.setNombres(nombres);
-
             }
 
         } catch (SQLException e) {

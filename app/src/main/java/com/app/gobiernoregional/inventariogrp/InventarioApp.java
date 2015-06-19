@@ -7,9 +7,8 @@ import com.app.gobiernoregional.inventariogrp.di.components.DaggerAppComponent;
 import com.app.gobiernoregional.inventariogrp.di.module.ApplicationModule;
 import com.app.gobiernoregional.inventariogrp.di.module.DomainModule;
 
-/**
- * Created by practicanteoti on 05/06/2015.
- */
+
+
 public class InventarioApp extends Application {
 
     private AppComponent mAppComponent;

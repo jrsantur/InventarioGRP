@@ -1,15 +1,13 @@
 package com.app.gobiernoregional.model.local.siga;
 
 
-import com.app.gobiernoregional.common.util.Constants;
+import com.grp.common.Constants;
 
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
-/**
- * Created by practicanteoti on 16/06/2015.
- */
+
 public class ConnectionSiga {
 
     String url;
@@ -20,11 +18,11 @@ public class ConnectionSiga {
 
     public java.sql.Connection conectar(){
 
-        url = "jdbc:jtds:sqlserver//"+Constants.SERVER_IP+":"+Constants.PUERTO+";DatabaseName="+Constants.NAME_DATA_BASE;
+        url = "jdbc:jtds:sqlserver//"+ Constants.SERVER_IP+":"+Constants.PUERTO+";DatabaseName="+Constants.NAME_DATA_BASE;
 
         try{
             Class.forName(Constants.DRIVER);
-            con = DriverManager.getConnection(url , Constants.USUER , Constants.PASSWORD);;
+            con = DriverManager.getConnection(url , Constants.USUER , Constants.PASSWORD);
             String SQL = "SELECT TOP 2 CODIGO_ACTIVO , DESCRIPCION FROM SIG_PATRIMONIO";
             stmt = con.createStatement();
             rs = stmt.executeQuery(SQL);

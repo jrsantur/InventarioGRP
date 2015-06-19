@@ -1,7 +1,6 @@
 package com.app.gobiernoregional.inventariogrp.provider;
 
 
-
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.util.Log;
@@ -21,11 +20,11 @@ import java.sql.SQLException;
 
 public class DatabaseHelper extends OrmLiteSqliteOpenHelper {
 
-    private Dao<BienActivo , Integer> bienactivoDao ;
-    private Dao<UnidadEjecutora , Integer> unidadEjecutorasDao;
-    private Dao<UnidadOrganica , Integer> unidadOrganicasDao;
-    private Dao<DireccionRegional , Integer> direccionRegionalDao;
-    private Dao<Responsable , Integer> responsableDao;
+    private Dao<BienActivo, Integer> bienactivoDao ;
+    private Dao<UnidadEjecutora, Integer> unidadEjecutorasDao;
+    private Dao<UnidadOrganica, Integer> unidadOrganicasDao;
+    private Dao<DireccionRegional, Integer> direccionRegionalDao;
+    private Dao<Responsable, Integer> responsableDao;
     private  static DatabaseHelper instance;
 
 
