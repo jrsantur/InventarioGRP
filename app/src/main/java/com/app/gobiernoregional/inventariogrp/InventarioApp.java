@@ -3,7 +3,6 @@ package com.app.gobiernoregional.inventariogrp;
 import android.app.Application;
 
 import com.app.gobiernoregional.inventariogrp.di.components.AppComponent;
-import com.app.gobiernoregional.inventariogrp.di.components.DaggerAppComponent;
 import com.app.gobiernoregional.inventariogrp.di.module.ApplicationModule;
 import com.app.gobiernoregional.inventariogrp.di.module.DomainModule;
 
@@ -20,10 +19,11 @@ public class InventarioApp extends Application {
 
     private void initializeDependencyInjector() {
 
-        mAppComponent = DaggerAppComponent.builder()
+        /*mAppComponent = DaggerAppComponent.builder()
                 .applicationModule(new ApplicationModule(this))
                 .domainModule(new DomainModule())
                 .build();
+                */
     }
 
     public AppComponent getAppComponent() {

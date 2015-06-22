@@ -5,6 +5,6 @@ package com.app.gobiernoregional.domain;
  */
 public interface LoginUsecase extends UseCase {
 
-    boolean login(String username, String password);
+    void login(String username, String password);
 
 }

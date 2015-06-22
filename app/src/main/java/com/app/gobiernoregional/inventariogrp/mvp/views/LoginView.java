@@ -5,25 +5,13 @@ package com.app.gobiernoregional.inventariogrp.mvp.views;
  */
 public interface LoginView extends View{
 
-    void showLoading();
+    public void showProgress();
 
-    void hideLoading();
+    public void hideProgress();
 
-    void showMessage();
+    public void setUsernameError();
 
-    void setUsernameError();
+    public void setPasswordError();
 
-    void setPasswordError();
-
-    void activateButtonLogin();
-
-    void hideButtonLogin();
-
-    void setTextFieldUsername(String username);
-
-    void setTextFieldPassword(String password);
-
-    boolean isFieldsEmpty();
-
-    void navigateToHome();
+    public void navigateToHome();
 }
